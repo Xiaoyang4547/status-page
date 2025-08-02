@@ -71,7 +71,6 @@ const workerConfig: WorkerConfig = {
       method: 'HEAD',
       // `target` should be `host:port` for tcp monitors
       target: 'https://time.xiaoyang4547.dpdns.org',
-      tooltip: 'My production server SSH',
       statusPageLink: 'https://time.xiaoyang4547.dpdns.org',
       timeout: 10000,
     },
