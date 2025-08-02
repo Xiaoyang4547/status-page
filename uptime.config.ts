@@ -32,7 +32,7 @@ const workerConfig: WorkerConfig = {
       // `name` is used at status page and callback message
       name: '个人网站',
       // `method` should be a valid HTTP Method
-      method: 'TRACE',
+      method: 'HEAD',
       // `target` is a valid URL
       target: 'https://xiaoyang4547.dpdns.org/',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
@@ -68,7 +68,7 @@ const workerConfig: WorkerConfig = {
       id: 'no_out',
       name: '订阅提醒',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TRACE',
+      method: 'HEAD',
       // `target` should be `host:port` for tcp monitors
       target: 'https://time.xiaoyang4547.dpdns.org',
       tooltip: 'My production server SSH',
@@ -78,7 +78,7 @@ const workerConfig: WorkerConfig = {
     {
       id: 'foo_monitor',
       name: '谷歌',
-      method: 'TRACE',
+      method: 'HEAD',
       target: 'https://google.com',
       statusPageLink: 'https://google.com',
       timeout: 10000,
