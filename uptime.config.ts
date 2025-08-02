@@ -66,13 +66,13 @@ const workerConfig: WorkerConfig = {
     // Example TCP Monitor
     {
       id: 'foo_monitor',
-      name: '订阅提醒',
+      name: '必应',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'POST',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://time.xiaoyang4547.dpdns.org‘,
+      target: 'https://cn.bing.com‘,
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://time.xiaoyang4547.dpdns.org',
+      statusPageLink: 'https://cn.bing.com',
       timeout: 10000,
     },
     {
