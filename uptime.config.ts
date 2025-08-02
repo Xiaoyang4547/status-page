@@ -2,7 +2,7 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "Xiaoyang4547's Status Page",
+  title: "Xiaoyang4547's Monitors Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://github.com/Xiaoyang4547', label: 'GitHub' },
@@ -30,15 +30,15 @@ const workerConfig: WorkerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'foo_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: '个人网站',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://xiaoyang4547.dpdns.org',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://xiaoyang4547.dpdns.org',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -66,13 +66,13 @@ const workerConfig: WorkerConfig = {
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      name: '谷歌',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'POST',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
+      target: 'google.com',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'google.com',
       timeout: 5000,
     },
   ],
