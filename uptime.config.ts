@@ -70,9 +70,9 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://time.xiaoyang4547.dpdns.org/,
+      target: 'https://time.xiaoyang4547.dpdns.org,
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://time.xiaoyang4547.dpdns.org/',
+      statusPageLink: 'https://time.xiaoyang4547.dpdns.org',
       timeout: 10000,
     },
     {
