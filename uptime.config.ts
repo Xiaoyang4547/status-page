@@ -13,8 +13,8 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🔐 Private': ['test_tcp_monitor'],
+    '🌐 开放': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
+    '🔐 内部': ['no_out'],
   },
 }
 
@@ -34,11 +34,11 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://xiaoyang4547.dpdns.org',
+      target: 'https://xiaoyang4547.dpdns.org/',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://xiaoyang4547.dpdns.org',
+      statusPageLink: 'https://xiaoyang4547.dpdns.org/',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -65,15 +65,23 @@ const workerConfig: WorkerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: '谷歌',
+      id: 'no_out',
+      name: '订阅提醒',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'POST',
+      method: 'PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'google.com',
+      target: 'https://time.xiaoyang4547.dpdns.org/,
       tooltip: 'My production server SSH',
-      statusPageLink: 'google.com',
-      timeout: 5000,
+      statusPageLink: 'https://time.xiaoyang4547.dpdns.org/',
+      timeout: 10000,
+    },
+    {
+      id: 'foo_monitor',
+      name: '谷歌',
+      method: 'POST',
+      target: 'https://google.com',
+      statusPageLink: 'https://google.com',
+      timeout: 10000,
     },
   ],
   notification: {
