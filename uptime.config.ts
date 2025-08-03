@@ -34,7 +34,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'HEAD',
       // `target` is a valid URL
-      target: 'https://xiaoyang4547.dpdns.org/',
+      target: 'https://xiaoyang4547.dpdns.org/about.html',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -78,7 +78,7 @@ const workerConfig: WorkerConfig = {
       id: 'foo_monitor',
       name: '谷歌',
       method: 'HEAD',
-      target: 'https://google.com',
+      target: 'https://google.com/',
       statusPageLink: 'https://google.com',
       timeout: 10000,
     },
