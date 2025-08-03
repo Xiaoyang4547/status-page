@@ -32,9 +32,9 @@ const workerConfig: WorkerConfig = {
       // `name` is used at status page and callback message
       name: '个人网站',
       // `method` should be a valid HTTP Method
-      method: 'HEAD',
+      method: 'GET https://xiaoyang4547.dpdns.org/about.html',
       // `target` is a valid URL
-      target: 'https://xiaoyang4547.dpdns.org/about.html',
+      target: 'https://xiaoyang4547.dpdns.org/',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
