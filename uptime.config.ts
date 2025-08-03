@@ -74,14 +74,6 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://time.xiaoyang4547.dpdns.org',
       timeout: 10000,
     },
-    {
-      id: 'foo_monitor',
-      name: '谷歌',
-      method: 'OPTIONS',
-      target: 'https://google.com/',
-      statusPageLink: 'https://google.com',
-      timeout: 10000,
-    },
   ],
   notification: {
     // [Optional] apprise API server URL
