@@ -77,7 +77,7 @@ const workerConfig: WorkerConfig = {
     {
       id: 'foo_monitor',
       name: '谷歌',
-      method: 'HEAD',
+      method: 'HEAD https://google.com',
       target: 'https://google.com/',
       statusPageLink: 'https://google.com',
       timeout: 10000,
