@@ -66,12 +66,12 @@ const workerConfig: WorkerConfig = {
     // Example TCP Monitor
     {
       id: 'no_out',
-      name: '订阅提醒',
+      name: '服务器',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'HEAD',
+      method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://time.xiaoyang4547.dpdns.org',
-      statusPageLink: 'https://time.xiaoyang4547.dpdns.org',
+      target: '103.239.245.177:27393',
+      statusPageLink: 'https://app.rainyun.com',
       timeout: 10000,
     },
   ],
