@@ -34,7 +34,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://www.xiaoyang4547.dpdns.org/index.html',
+      target: 'https://www.xiaoyang4547.dpdns.org/',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -51,7 +51,7 @@ const workerConfig: WorkerConfig = {
         Authorization: 'Bearer YOUR_TOKEN_HERE',
       },
       // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
+      body: 'index.html',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
       responseKeyword: 'success',
       // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
